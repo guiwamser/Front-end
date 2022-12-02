@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Aluno</title>
-    <script>
-        alert('carregando......')
-    </script>
-    <script src="js/script.js"></script>
+    <title>Editar Aluno</title>
 </head>
-
 <body>
     <header>
         <div id="logo">
@@ -20,15 +15,20 @@
                 <img src="img/logo.png" alt="Logo">
             </a>
         </div>
-            <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="listar.html">Listar</a></li>
-            <li><a href="editar.html">Editar</a></li>
-            </ul>
+        <ul>
+        <li><a href="cadastrar.html">Cadastrar</a></li>
+        <li><a href="listar.html">Listar</a></li>
+        <li><a href="index.html">inicio</a></li>
+        </ul>
     </header>
     <main>
-        <h1>Cadastro Alunos</h1>
+            <h1>Editar Aluno</h1>
+
         <form action="">
+            <div>
+                <input type= "text" class="campos" id= "id" placeholder= "ID">
+            </div>
+            <br>
             <div>
                 <input type= "text" class="campos" id= "nome" placeholder= "Nome">
             </div>
@@ -42,7 +42,7 @@
             </div>
             <br>
             <div>
-                <input class= "botoes salvar" type="submit"  value="Salvar">
+                <input class= "botoes salvar" type="submit" value="Salvar">
                 <button class= "botoes cancelar" >Limpar</button>
             </div>
         </form>
@@ -50,6 +50,6 @@
     <footer>
         <span>Desenvolvido Turma MoreDevs Noturno</span>
     </footer>
-    <script src="js/script.js"></script>
+
 </body>
 </html>
