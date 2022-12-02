@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Aluno</title>
-    
-    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -26,22 +24,23 @@
     </header>
     <main>
         <h1>Cadastro Alunos</h1>
+
         <form action="">
             <div>
-                <input type= "text" class="campos" id= "nome" placeholder= "Nome">
+                <input type= "text" class="campos" name="nome" placeholder= "Nome">
             </div>
             <br>
             <div>
-                <input type= "text" class="campos" id= "cpf" placeholder= "CPF">
+                <input type= "text" class="campos"name= "cpf" placeholder= "CPF">
             </div>
             <br>
             <div>
-                <input type= "text" class="campos" id= "idade" placeholder= "Idade">
+                <input type= "text" class="campos"name= "idade" placeholder= "Idade">
             </div>
             <br>
             <div>
-                <input class= "botoes salvar" type="submit"  value="Salvar">
-                <button class= "botoes cancelar" onclick="limpar(event)" >Limpar</button>
+                <input class="botoes salvar" id="salvar" type="submit"  value="Salvar">
+                <button class= "botoes cancelar" onclick="limpar(event)">     Limpar</button>
             </div>
         </form>
     </main>
