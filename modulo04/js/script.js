@@ -34,6 +34,8 @@ function salvar(event){
                     'idade': year
                 }
     console.log(Aluno)
+
+    localStorage.setItem('Abacáte', JSON.stringify(Aluno));
 }
 
 document.getElementById('salvar').addEventListener('click', salvar)
