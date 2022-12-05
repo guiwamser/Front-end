@@ -5,11 +5,12 @@ var elemento = document.querySelector('h1')
 //variavel recebendo inner html para incremento ou alteracao descrtivo
 elemento.innerHTML += ' JS';
 //variavel elemento recebendo estilizacao de cor 
-elemento.style.color = '#white';
+elemento.style.color = '#blue';
 //console log e o nosso print retorno variavel
 console.log(elemento);
 
 function limpar(event){
+    
     event.preventDefault();
     document.querySelector('form').reset();
     console.log('Limpando....');
@@ -28,6 +29,7 @@ function salvar(event){
     if(listaAlunos == null){
         listaAlunos = [];
     }
+    
     var id = JSON.parse(localStorage.getItem('IdAluno'));
     if(listaAlunos == null){
         id = 0;

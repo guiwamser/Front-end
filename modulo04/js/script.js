@@ -35,7 +35,7 @@ function salvar(event){
                 }
     console.log(Aluno)
 
-    localStorage.setItem('Abacáte', JSON.stringify(Aluno));
+    localStorage.setItem('Alunos', JSON.stringify(Aluno));
 }
 
 document.getElementById('salvar').addEventListener('click', salvar)

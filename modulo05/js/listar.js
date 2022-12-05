@@ -1,3 +1,14 @@
+function carregaDados(){
+    return JSON.parse(localStorage.getItem('Alunos'))
+};
+
+function carregarEditar(event, id){
+    console.log('Evento de click', event);
+    event.preventdefault();
+    carregarEditar(id)
+
+};
+
 function carregar(){
     console.log('Carregando janela');
     var tbody = document.querySelector('tbody');
@@ -14,7 +25,8 @@ function carregar(){
                     <td>${e['cpf']}</td>
                     <td>${e['idade']}</td>
                     <td>
-                    <a href="editar.html">editar</a>
+                    <a href="editar.html?id=${e['id']}">editar</a>
+                    <button href="" onclick="deletar(${e['id']})">Deletar</button>
                     </td>
                 </tr>`
 
@@ -22,5 +34,18 @@ function carregar(){
         
     });
 }
+function deletar(id){
+    var lista = carregaDados();
+    var novalista = [];
+    lista.forEach(e => {
+        if(e['id'] != id){
+            novalista.push(e)
+        }
+    });
+    localStorage.setItem('Alunos', JSON.stringify(novalista));
+    carregar();
+
+}
+
 
 window.onload = carregar
