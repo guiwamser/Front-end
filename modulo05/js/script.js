@@ -10,7 +10,6 @@ elemento.style.color = '#blue';
 console.log(elemento);
 
 function limpar(event){
-    
     event.preventDefault();
     document.querySelector('form').reset();
     console.log('Limpando....');

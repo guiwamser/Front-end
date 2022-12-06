@@ -26,7 +26,7 @@
 
         <form action="">
             <div>
-                <input type= "text" class="campos" name= "id" placeholder= "ID">
+                <input type= "text" class="campos" name= "id" placeholder= "ID" readonly>
             </div>
             <br>
             <div>
@@ -42,7 +42,7 @@
             </div>
             <br>
             <div>
-                <input class= "botoes salvar" type="submit" value="Salvar">
+                <input class= "botoes salvar" type="submit" onclick="editar(event)" value="Salvar">
                 <button class= "botoes cancelar" >Limpar</button>
             </div>
         </form>
@@ -50,6 +50,6 @@
     <footer>
         <span>Desenvolvido Turma MoreDevs Noturno</span>
     </footer>
-
+    <script src="js/editar.js"></script>
 </body>
 </html>

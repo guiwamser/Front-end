@@ -1,4 +1,4 @@
-function carregaDados(){
+function carregalocalstorage(){
     return JSON.parse(localStorage.getItem('Alunos'))
 };
 
@@ -35,7 +35,7 @@ function carregar(){
     });
 }
 function deletar(id){
-    var lista = carregaDados();
+    var lista = carregalocalstorage();
     var novalista = [];
     lista.forEach(e => {
         if(e['id'] != id){
