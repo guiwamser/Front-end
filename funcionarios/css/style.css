@@ -6,8 +6,8 @@ body, div, header, main{
 }
 
 body{
-    color: white;
-    background: #000;
+    color: rgb(46, 41, 41);
+    background: rgb(219, 19, 19);
 }
 
 #logo img{

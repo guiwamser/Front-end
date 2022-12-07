@@ -7,7 +7,7 @@ form{
 .campos{
     width: 200px;
     height: 20px;
-    border: 2px #e7e418 solid;
+    border: 2px #c55c16 solid;
     border-radius: 10px;
 
 }
@@ -28,6 +28,6 @@ form{
 
 .salvar, .cancelar{
     color:#e7e418;
-    background: black;
+    background: rgb(214, 16, 16);
     border: 1px solid #e7e418;
 }
