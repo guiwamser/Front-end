@@ -1,0 +1,14 @@
+body{
+    background: rgb(65, 67, 65);
+    color: aliceblue;
+}
+header{
+    background-color: rgb(73, 84, 84);
+}
+footer{
+    text-align: center;
+    background-color: rgb(64, 64, 71)
+}
+h1{
+    text-align: center;
+}
