@@ -1,0 +1,22 @@
+body{
+    color: yellow;
+    background: rgb(93, 90, 90);
+}
+h1{
+    text-align: center;
+}
+a{
+    color: yellow;
+
+}
+a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+header{
+    background-color: black;
+}
+footer{
+    text-align: center;
+    background: rgb(44, 44, 45);
+}
